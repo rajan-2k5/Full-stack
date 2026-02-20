@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions | Innovative Business Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;}
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 76px;}
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;}
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: 700;}
+        .hero-section {
+            background: linear-gradient(rgba(44,62,80,0.9), rgba(44,62,80,0.8));
+            color: white;
+            padding: 100px 0;}
+        .hero-title {
+            font-size: 3.5rem;}
+        .section-padding {
+            padding: 80px 0;}
+        .hero-carousel-wrapper {
+            position: relative;}
+        .hero-carousel-wrapper .carousel-control-prev,
+        .hero-carousel-wrapper .carousel-control-next {
+            width: auto;
+            opacity: 1;}
+        .hero-carousel-wrapper .carousel-control-prev {
+            left: -65px;}
+        .hero-carousel-wrapper .carousel-control-next {
+            right: -65px;}
+        .hero-carousel-wrapper .carousel-control-prev-icon,
+        .hero-carousel-wrapper .carousel-control-next-icon {
+            background-color: rgba(0,0,0,0.7);
+            border-radius: 50%;
+            padding: 18px;}
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.3rem;}
+            .hero-carousel-wrapper .carousel-control-prev {
+                left: -35px;}
+            .hero-carousel-wrapper .carousel-control-next {
+                right: -35px;}}
+    </style></head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-primary">TechNova</span>Solutions</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul></div></div></nav>
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="hero-title mb-4">Innovative Solutions for Modern Businesses</h1>
+                <p class="lead mb-4">
+                    We transform ideas into powerful digital experiences that drive growth.</p>
+                <a href="#services" class="btn btn-primary btn-lg me-3">Our Services</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+            </div>
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="hero-carousel-wrapper">
+                    <div id="heroCarousel" class="carousel slide shadow-lg rounded"
+                         data-bs-ride="carousel"
+                         data-bs-interval="3000">
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80"
+                                     class="d-block w-100 img-fluid" alt="Business"></div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80"
+                                     class="d-block w-100 img-fluid" alt="Team"></div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80"
+                                     class="d-block w-100 img-fluid" alt="Technology">
+                            </div></div>
+                        <button class="carousel-control-prev" type="button"
+                                data-bs-target="#heroCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                                data-bs-target="#heroCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button></div></div></div></div></div></section>
+<section id="about" class="section-padding text-center">
+    <div class="container">
+        <h2>About <span class="text-primary">TechNova Solutions</span></h2>
+        <p class="lead mt-3">Delivering innovative digital solutions for modern businesses.</p>
+    </div></section>
+<section id="services" class="section-padding bg-light text-center">
+    <div class="container">
+        <h2>Our <span class="text-primary">Services</span></h2>
+        <p class="lead mt-3">Web Development • Mobile Apps • UI/UX • Cloud</p>
+    </div></section>
+<section id="contact" class="section-padding">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                <h5>Our Location</h5>
+                <p>5/6 1st Street M.Thangammal Puram<br>
+                    Muthaihpram<br>Thoothukudi - 628005</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                <h5>Phone</h5>
+                <p>+91 8778131152</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                <h5>Email</h5>
+                <p>info@technovasolutions.com</p>
+            </div></div></div></section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+</script></body></html>
+
+
