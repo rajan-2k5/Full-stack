@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+<title>My Todo List</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<style>
+body{
+font-family: Arial;
+background:#f2f2f2;
+display:flex;
+justify-content:center;
+margin-top:50px;
+}
+.container{
+background:white;
+padding:20px;
+width:350px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+h2{
+text-align:center;
+color:#333;
+}
+ul{
+list-style:none;
+padding:0;
+}
+li{
+padding:8px;
+margin:5px 0;
+background:#f9f9f9;
+border-radius:5px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+button{
+background:#4CAF50;
+color:white;
+border:none;
+padding:5px 10px;
+border-radius:4px;
+cursor:pointer;
+}
+button:hover{
+background:#45a049;
+}
+input[type="text"]{
+width:70%;
+padding:6px;
+margin-top:10px;
+border-radius:4px;
+border:1px solid #ccc;
+}
+</style>
+</head>
+<body ng-controller="todoCtrl">
+<div class="container">
+<h2>My Todo List</h2>
+<ul>
+<li ng-repeat="todo in todos">
+<input type="checkbox" ng-model="todo.completed">
+<span>{{todo.text}}</span>
+<button ng-click="remove($index)">Delete</button>
+</li>
+</ul>
+<input type="text" ng-model="newTodo" placeholder="Add new task">
+<button ng-click="add()">Add</button>
+</div>
+<script>
+var app = angular.module("todoApp", []);
+app.controller("todoCtrl", function($scope) {
+$scope.todos = [
+{text:"Todo #1", completed:false},
+{text:"Todo #2", completed:false}
+];
+$scope.add = function(){
+if($scope.newTodo){
+$scope.todos.push({text:$scope.newTodo, completed:false});
+$scope.newTodo="";
+}
+};
+$scope.remove = function(index){
+$scope.todos.splice(index,1);
+};
+});
+</script>
+</body>
+</html>
